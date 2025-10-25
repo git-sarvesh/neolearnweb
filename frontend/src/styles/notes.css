@@ -1,0 +1,184 @@
+.notes-container {
+  min-height: 100vh;
+  background: #1f2121;
+}
+
+.notes-header {
+  background: #2c2f2f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-header nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.notes-header nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.notes-header nav a.active {
+  color: #5577ff;
+}
+
+.btn-logout {
+  background: #32b8c6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.notes-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.notes-main h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.note-editor {
+  width: 100%;
+  min-height: 150px;
+  background: #26343b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: 'Courier New', monospace;
+  resize: vertical;
+}
+
+.note-editor:focus {
+  outline: none;
+  border-color: #32b8c6;
+}
+
+.btn-save {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: #5577ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.notes-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.note-card {
+  background: #26343b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #32b8c6;
+}
+
+.note-content {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.btn-share {
+  background: transparent;
+  border: 1px solid #32b8c6;
+  color: #32b8c6;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chatbot-container {
+  background: #26343b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.chatbot-header {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #32b8c6;
+}
+
+.chatbot-intro {
+  background: #1f2121;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #32b8c6;
+}
+
+.chatbot-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.message {
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.message.user {
+  background: #5577ff;
+  text-align: right;
+}
+
+.message.bot {
+  background: #1f2121;
+}
+
+.chatbot-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 0.7rem;
+  background: #1f2121;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.chatbot-input button {
+  padding: 0.7rem 1.2rem;
+  background: #32b8c6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
